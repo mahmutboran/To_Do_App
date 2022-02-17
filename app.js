@@ -3,6 +3,11 @@ let myplus = document.getElementById("plus");
 let list = document.getElementById("list")
 
 myplus.addEventListener("click", (e) => {
+  if (todo.value=="") {
+    alert("Must be filled out");
+  } else {
+      
+  
 
     let _list = document.createElement("div")
     _list.setAttribute("class", "myInput")
@@ -20,10 +25,9 @@ myplus.addEventListener("click", (e) => {
     _list.innerHTML += todo.value
     list.prepend(_list)
     todo.value = ""
-    console.log(deleted)
+ 
 
     let btndelete = document.getElementById("trash")
-    console.log(btndelete)
     btndelete.addEventListener("click",()=>{
         _list.remove()
     })
@@ -46,7 +50,7 @@ myplus.addEventListener("click", (e) => {
 
     })
 
-
+}
     /* newP = document.getElementsByTagName("p")   
      Array.from(newP).forEach(e => {
     
