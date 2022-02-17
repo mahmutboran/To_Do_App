@@ -1,0 +1,104 @@
+
+html{
+    background-color: #0c103a;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.header{
+    text-align: center;
+    color: white;
+}
+
+.container{
+
+    width: 700px;
+    height: 400px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+
+#todo{
+width: 420px;
+height: 32px;
+border-radius: 5px;
+padding: 5px;
+}
+.input{
+    position: relative;
+}
+#plus{
+    border: none;
+    background-color: #fefefe;
+    position:absolute;
+    left: 400px;
+    top: 13px;
+    cursor: pointer;
+}
+#list{
+
+    display: flex;
+    flex-direction: column;
+
+
+    
+}
+.fa-trash{
+
+ /*    color: white; */
+    position:relative;
+    left: 370px;
+    cursor: pointer;
+}
+
+.myCheckbox{
+    left: -10px;
+}
+
+.myInput{
+    width: 410px;
+    height: 20px;
+    background-color: white;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    animation-name: myAnimation;
+    animation-duration: 1s;
+    margin: 5px 0;
+    justify-content: center;
+    padding: 10px 10px;
+   
+   
+   
+  }
+
+  #myCheckbox{
+      border: 5px solid purple;
+      cursor: pointer;
+
+  }
+
+   #myCheckbox:checked{
+    animation-name: myAnimation;
+    animation-duration: 1s;
+   }
+  @keyframes myAnimation {
+  
+          from { 
+              transform: rotateX(2turn); 
+          } to { 
+              transform: rotateX(1turn); 
+          }
+    
+  }
+  .footer{
+      text-align: center;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+  }
