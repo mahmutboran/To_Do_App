@@ -10,6 +10,7 @@ let completed=()=>{
 }
 
 
+
 myplus.addEventListener("click", (e) => {
     if (todo.value == "") {
         alert("Must be filled out");
@@ -69,10 +70,13 @@ myplus.addEventListener("click", (e) => {
      
         })
 
-     
+    
+        
+
 
 
     }
+
     /* newP = document.getElementsByTagName("p")   
      Array.from(newP).forEach(e => {
     
@@ -93,6 +97,14 @@ myplus.addEventListener("click", (e) => {
             })
         }); */
 })
+
+
+//ENTER Tusu İle giris yapabilmesi için keycode==13
+todo.addEventListener("keyup", function (event) {
+        event.preventDefault();
+        if (event.keyCode == 13) 
+        { myplus.click(); }
+    })
 
 
 
