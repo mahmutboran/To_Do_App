@@ -58,8 +58,8 @@ padding: 5px;
     cursor: pointer;
 }
 
-.myCheckbox{
-    left: -10px;
+.tik1{
+
 }
 
 .myInput{
@@ -79,7 +79,7 @@ padding: 5px;
   }
 
   #myCheckbox{
-      border: 5px solid purple;
+
       cursor: pointer;
 
   }
